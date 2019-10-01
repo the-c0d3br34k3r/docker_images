@@ -1,0 +1,8 @@
+The folowing commands can be used to test the freeradius service while running the docker container:
+ radtest testuser password <CONTAINER_IP> 0 12345
+ radtest -t testuser password <CONTAINER_IP> 0 12345
+ radtest -t pap testuser password <CONTAINER_IP> 0 12345
+ radtest -t chap testuser password <CONTAINER_IP> 0 12345
+ radtest -t mschap testuser password <CONTAINER_IP> 0 12345
+ radtest -t eap-md5 testuser password <CONTAINER_IP> 0 12345
+
