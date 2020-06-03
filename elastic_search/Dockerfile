@@ -37,6 +37,15 @@ RUN apt-get install systemd -y
 # Add elasticsearch service to startup
 RUN systemctl enable elasticsearch
 
+# Expose the necessary ports
+EXPOSE 9200 9300
+
+# Switch user
+USER elasticsearch
+
+# Add the elastic search binary location to the PATH variable
+ENV PATH=$PATH:/usr/share/elasticsearch/bin
+
 # Start elasticsearch
-# RUN service elasticsearch start
+ENTRYPOINT elasticsearch
 
