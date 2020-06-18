@@ -1,5 +1,5 @@
 # Use a ubuntu parent image
-FROM ubuntu
+FROM ubuntu:20.04
 
 # Install any needed packages
 RUN apt-get update --fix-missing

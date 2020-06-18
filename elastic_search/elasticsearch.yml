@@ -91,5 +91,5 @@ network.host: 0.0.0.0
 cluster.name: Cluster1
 node.name: "Node1"
 discovery.seed_hosts: []
-
+cluster.initial_master_nodes : Node1
 
